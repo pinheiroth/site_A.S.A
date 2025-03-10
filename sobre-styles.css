@@ -1,0 +1,132 @@
+:root {
+    --primary-color: #1695a3;
+    --primary-light: #1eb5c6;
+    --primary-dark: #107885;
+    --secondary-color: #f8f9fa;
+    --text-dark: #2c3e50;
+    --text-light: #ffffff;
+}
+
+/* Hero Section */
+.about-hero {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    padding: 6rem 2rem;
+    color: var(--text-light);
+    text-align: center;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.mission-section {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+}
+
+.mission-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Seções de Conteúdo */
+.challenges-section, .solutions-section {
+    padding: 4rem 2rem;
+}
+
+.challenges-section {
+    background-color: var(--secondary-color);
+}
+
+.content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.challenges-section h2, .solutions-section h2 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Grid de Soluções */
+.solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.solution-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(22, 149, 163, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.solution-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(22, 149, 163, 0.2);
+}
+
+.solution-card i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.solution-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* Mensagem Final */
+.closing-message {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: var(--text-light);
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.closing-message p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .about-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .mission-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .challenges-section h2, 
+    .solutions-section h2 {
+        font-size: 2rem;
+    }
+
+    .solutions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .solution-card {
+        margin-bottom: 1rem;
+    }
+} 
