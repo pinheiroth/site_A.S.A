@@ -1,0 +1,5 @@
+{
+    "redirects": [
+      { "source": "/", "destination": "/asa.html", "permanent": true }
+    ]
+  }
