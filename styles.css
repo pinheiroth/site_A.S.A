@@ -178,6 +178,7 @@ body {
     transform: scale(1.1);
 }
 
+
 /* Hero Serviços */
 .services {
     min-height: 100vh;
@@ -488,6 +489,13 @@ body {
     .services,
     .acronym {
         padding: 60px 20px;
+    }
+
+    .service {
+        width: 95%;
+        padding: 10px;
+        font-size: 1.2rem; 
+        margin: 0 auto; 
     }
 
     .service-btn {
