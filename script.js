@@ -81,6 +81,8 @@ document.addEventListener('DOMContentLoaded', function() {
 const SUPABASE_URL = "https://ybfkqmejybzfqbkagkvi.supabase.co"; // Substitua pela URL real do Supabase
 const SUPABASE_API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InliZmtxbWVqeWJ6ZnFia2Fna3ZpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDE2MzE1OTcsImV4cCI6MjA1NzIwNzU5N30.qgD3PKCWT_VOEkjRA9U_EDnSlKokQGrdWUFLtqWTvws"; // Substitua pela API Key real
 
+
+
 document.getElementById("contactForm").addEventListener("submit", async function(event) {
     event.preventDefault();
 
