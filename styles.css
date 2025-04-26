@@ -139,12 +139,12 @@ body {
     font-size: var(--text-large);
     margin-bottom: var(--spacing-small);
     line-height: 1.5;
-    color: #333333; /* Cor mais escura para dar destaque */
+    color: #333333; 
 }
 
 .schedule-button {
-    background-color: transparent;
-    color: #1695a3;
+    background-color: #1695a3;
+    color: #ffffff;
     border: none;
     padding: 15px 30px;
     border-radius: 5px;
