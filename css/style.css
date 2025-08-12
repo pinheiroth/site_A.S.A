@@ -544,8 +544,8 @@
             margin-bottom: 32px;
         }
 
-        .faq-list {
-            space-y: 16px;
+        .faq-list > * + * {
+            margin-top: 16px;
         }
 
         .faq-item {
@@ -620,8 +620,8 @@
             margin-bottom: 32px;
         }
 
-        .contact-methods {
-            space-y: 24px;
+        .contact-methods > * + * {
+            margin-top: 24px;
         }
 
         .contact-method {
