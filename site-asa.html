@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.S.A Company - Transformando Dados em Decisões Inteligentes</title>
+    <meta name="description" content="Especialistas em análise de dados para PMEs. Consultoria, automação e soluções tecnológicas personalizadas.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/png" href="Passaro azul logo branca.png">
+</head>
+<body>
+
+    <div class="loading" id="loading">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <header class="header" id="header">
+        <div class="header-content">
+            <a href="#home" class="logo">
+                <img src="public/logo-header.png" alt="A.S.A Company">
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#servicos" class="nav-link">Serviços</a>
+                <a href="sobre.html" class="nav-link">Sobre</a>
+                <a href="#products" class="nav-link">Produtos</a>
+                <a href="#contact" class="nav-link">Contato</a>
+            </nav>
+            
+            <button class="cta-button" onclick="openWhatsApp()">
+                <i class="fab fa-whatsapp"></i>
+                Fale Conosco
+            </button>
+            
+            <button class="menu-mobile-btn" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-chart-line"></i>
+                    Especialista em Dados
+                </div>
+                <h1>Transformamos Dados em Decisões Inteligentes</h1>
+                <p>Ajudamos micro e pequenas empresas a crescer através de soluções tecnológicas avançadas, análise de dados e automação de processos.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="openWhatsApp('Olá! Gostaria de agendar uma reunião para minha empresa.')">
+                        <i class="fas fa-calendar-alt"></i>
+                        Agende uma Reunião
+                    </button>
+                    <a href="#servicos" class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i>
+                        Nossos Serviços
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="servicos">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Nossos Serviços</div>
+                <h2 class="section-title">Soluções Completas para seu Negócio</h2>
+                <p class="section-description">Oferecemos uma gama completa de serviços especializados em análise de dados, automação e consultoria para impulsionar o crescimento da sua empresa.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Análise de Dados</h3>
+                    <p>Transformamos informações brutas em insights valiosos para tomada de decisões estratégicas e identificação de oportunidades.</p>
+                    <ul class="service-features">
+                        <li>Relatórios interativos personalizados</li>
+                        <li>Análise preditiva de tendências</li>
+                        <li>KPIs e métricas de performance</li>
+                        <li>Dashboards em tempo real</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-spider"></i>
+                    </div>
+                    <h3>Web Scraping</h3>
+                    <p>Coletamos e analisamos dados de sites para fornecer insights sobre concorrentes e tendências de mercado.</p>
+                    <ul class="service-features">
+                        <li>Monitoramento de concorrentes</li>
+                        <li>Análise de preços de mercado</li>
+                        <li>Coleta automatizada de dados</li>
+                        <li>Relatórios de inteligência competitiva</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Automação de Processos</h3>
+                    <p>Otimizamos workflows através de automação inteligente, reduzindo custos e aumentando a eficiência operacional.</p>
+                    <ul class="service-features">
+                        <li>Integração entre sistemas</li>
+                        <li>Automação de tarefas repetitivas</li>
+                        <li>Fluxos de trabalho otimizados</li>
+                        <li>Redução de erros operacionais</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h3>Consultoria Estratégica</h3>
+                    <p>Oferecemos consultoria especializada para transformar desafios em oportunidades através de soluções personalizadas.</p>
+                    <ul class="service-features">
+                        <li>Diagnóstico empresarial completo</li>
+                        <li>Estratégias data-driven</li>
+                        <li>Otimização de processos</li>
+                        <li>Acompanhamento contínuo</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Treinamento Data-Driven</h3>
+                    <p>Capacitamos sua equipe para adotar uma cultura orientada por dados com ferramentas e metodologias avançadas.</p>
+                    <ul class="service-features">
+                        <li>Workshops práticos</li>
+                        <li>Treinamento em ferramentas</li>
+                        <li>Metodologias data-driven</li>
+                        <li>Certificações especializadas</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Visualização de Dados</h3>
+                    <p>Criamos representações visuais claras e intuitivas que facilitam a análise e interpretação de dados complexos.</p>
+                    <ul class="service-features">
+                        <li>Dashboards interativos</li>
+                        <li>Gráficos dinâmicos</li>
+                        <li>Relatórios visuais</li>
+                        <li>Storytelling com dados</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Values Section (A.S.A) -->
+    <section class="company-values" id="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Nossa Metodologia</div>
+                <h2 class="section-title">A.S.A</h2>
+                <p class="section-description">Nossa abordagem é baseada em três pilares fundamentais que garantem o sucesso dos nossos clientes.</p>
+            </div>
+
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Análise</h3>
+                    <p>Transformamos dados em decisões precisas. Nossa abordagem vai além dos números, aplicando técnicas avançadas para interpretar informações e revelar insights estratégicos que se tornam um diferencial competitivo.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Soluções</h3>
+                    <p>Desenvolvemos soluções personalizadas que atendem às necessidades específicas de cada negócio. Desde dashboards interativos até sistemas integrados, garantimos acesso às informações certas no momento certo.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Aprimoramento</h3>
+                    <p>Acreditamos que o crescimento é um processo contínuo. Acompanhamos o desempenho das soluções implementadas e buscamos constantemente novas formas de agregar valor ao seu negócio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Nossos Produtos</div>
+                <h2 class="section-title">Soluções Tecnológicas Inovadoras</h2>
+                <p class="section-description">Desenvolvemos produtos tecnológicos que atendem às demandas específicas do mercado, com foco em eficiência e resultados.</p>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card featured">
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <img src="public/logoHealthNote.png" alt="Health Note Logo" style="width: 80px; height: auto;">
+                        </div>
+                        <h3>Health Note</h3>
+                        <p class="product-description">Sistema completo para gestão de clínicas médicas e estéticas</p>
+                    </div>
+                    <ul class="product-features">
+                        <li>Prontuário eletrônico completo</li>
+                        <li>Gestão financeira integrada</li>
+                        <li>Sistema de agendamento inteligente</li>
+                        <li>Relatórios personalizados</li>
+                        <li>Interface intuitiva e moderna</li>
+                    </ul>
+                    <a href="https://care-notes-system.vercel.app/" class="btn btn-primary" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        Visualizar Produto
+                    </a>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <i class="fas fa-chart-line" style="font-size: 48px; color: var(--primary);"></i>
+                        </div>
+                        <h3>Data Insights</h3>
+                        <p class="product-description">Plataforma completa de análise e visualização de dados</p>
+                    </div>
+                    <ul class="product-features">
+                        <li>Dashboards interativos avançados</li>
+                        <li>ETL e preparação de dados</li>
+                        <li>Business Intelligence completo</li>
+                        <li>Integração com múltiplas fontes</li>
+                        <li>Análise preditiva</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i>
+                        Saiba Mais
+                    </a>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <i class="fas fa-puzzle-piece" style="font-size: 48px; color: var(--primary);"></i>
+                        </div>
+                        <h3>Soluções Customizadas</h3>
+                        <p class="product-description">Desenvolvimento sob demanda para necessidades específicas</p>
+                    </div>
+                    <ul class="product-features">
+                        <li>Aplicações web personalizadas</li>
+                        <li>Sistemas de gestão específicos</li>
+                        <li>Automação de processos únicos</li>
+                        <li>Integração com APIs externas</li>
+                        <li>Suporte técnico dedicado</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-handshake"></i>
+                        Fale Conosco
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="tech-stack">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">Tecnologias</div>
+                <h2 class="section-title">Stack Tecnológico</h2>
+                <p class="section-description">Utilizamos as tecnologias mais modernas e confiáveis do mercado para entregar soluções robustas e escaláveis.</p>
+            </div>
+
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-database"></i>
+                    <span>SQL</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-react"></i>
+                    <span>React</span>
+                </div>
+                <div class="tech-item">
+                    <img src="public/n8n.png" alt="N8n" style="width: 48px; height: auto;">
+                    <span>N8n</span>
+                </div>
+                <div class="tech-item">
+                    <img src="public/pandas.png" alt="Pandas" style="width: 48px; height: auto;">
+                    <span>Pandas</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-aws"></i>
+                    <span>AWS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="faq-container">
+                <div class="faq-intro">
+                    <div class="section-badge">FAQ</div>
+                    <h2>Perguntas Frequentes</h2>
+                    <p>Esclarecemos as principais dúvidas sobre nossos serviços e metodologia. Tem mais perguntas? Entre em contato conosco!</p>
+                    <button class="btn btn-primary" onclick="openWhatsApp('Olá! Tenho interesse em conhecer mais sobre suas soluções.')">
+                        <i class="fas fa-comments"></i>
+                        Fale Conosco
+                    </button>
+                </div>
+
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>O que é análise de dados e como pode beneficiar meu negócio?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Análise de dados é o processo de coletar, processar e interpretar dados para auxiliar na tomada de decisões estratégicas. Isso ajuda a identificar oportunidades de crescimento, otimizar processos e aumentar a eficiência, resultando em maior competitividade e lucratividade.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Quais serviços de análise de dados vocês oferecem?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Oferecemos serviços como análise de desempenho empresarial, previsões de vendas, identificação de tendências de mercado, análise de comportamento do cliente e dashboards personalizados para monitoramento dos seus dados.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Vocês atendem empresas de quais tamanhos e setores?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Nosso foco é em PMEs (pequenas e médias empresas). Nossos serviços são personalizados para se adequarem às necessidades específicas de cada negócio, independentemente do nicho de atuação.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Quais os custos envolvidos com os serviços?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Os custos dependem do nicho e da complexidade do projeto. Oferecemos pacotes personalizados para atender às necessidades e ao orçamento de cada cliente. Para um orçamento detalhado, entre em contato conosco.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Como é garantida a segurança e privacidade dos dados?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Adotamos as melhores práticas de segurança de dados, estando em conformidade com as leis de proteção de dados, para garantir a confidencialidade e a integridade das suas informações.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Qual o diferencial da A.S.A em relação à concorrência?</span>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Nosso diferencial está na combinação de expertise em análise de dados com uma abordagem personalizada e humanizada de consultoria em gestão. Oferecemos soluções sob medida focadas em resultados práticos e mensuráveis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="section-badge">Contato</div>
+                    <h2>Vamos Conversar?</h2>
+                    <p>Entre em contato conosco e descubra como podemos impulsionar o crescimento do seu negócio com soluções tecnológicas inovadoras.</p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-method-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p>Atendimento imediato pelo WhatsApp</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>E-mail</h4>
+                                <p>Envie sua mensagem pelo formulário</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-method-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Reunião</h4>
+                                <p>Agende uma consulta gratuita</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary" onclick="openWhatsApp('Olá! Gostaria de saber mais sobre seus serviços de análise de dados e gestão empresarial.')">
+                        <i class="fab fa-whatsapp"></i>
+                        Conversar no WhatsApp
+                    </button>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nome *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Telefone *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Empresa</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mensagem *</label>
+                            <textarea id="message" name="message" placeholder="Conte-nos sobre seu projeto ou necessidade..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="public/logo-header.png" alt="A.S.A Company">
+                    </div>
+                    <p>Especialistas em transformar dados em decisões inteligentes para micro e pequenas empresas. Impulsionamos o crescimento através de tecnologia e inovação.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/a.s.acompany" class="social-link" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/a-s-a-company-551822353/" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="#services">Análise de Dados</a></li>
+                        <li><a href="#services">Web Scraping</a></li>
+                        <li><a href="#services">Automação</a></li>
+                        <li><a href="#services">Consultoria</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Produtos</h4>
+                    <ul>
+                        <li><a href="#products">Health Note</a></li>
+                        <li><a href="#products">Data Insights</a></li>
+                        <li><a href="#products">Soluções Customizadas</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#about">Sobre Nós</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 A.S.A Company. Todos os direitos reservados. CNPJ: XX.XXX.XXX/0001-XX</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="whatsapp-float" onclick="openWhatsApp()">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
